@@ -1,24 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Project build by Samuel Villaescusa Vinader(samuelvv22@gmail.com)
 
-Things you may want to cover:
+### How to build project
 
-* Ruby version
+ - Build in Ubuntu 14.04.5 LTS
+ - Using Ruby 2.3.1 version.
+ - Rails 5.1.4 version
 
-* System dependencies
+ Steps to run project:
+  - Need to install all the esentials for rails (nodejs, libxml2 etc)
+  - Also mysql needed -> `gem install mysql2`
 
-* Configuration
+Then run the server using `spring` --> `bundle exec spring rails server`
 
-* Database creation
+You should have it running in `localhost:3000`
 
-* Database initialization
+PD: I have build a deployment script, but don't know if it will work, because
+    i built it pretty fast to start the project.
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

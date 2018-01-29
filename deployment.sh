@@ -40,8 +40,7 @@ if [[ $BUILD == "1" ]]; then
 
   sudo apt-get install ruby-full
   sudo gem install rails
-  sudo gem install bundler --no-ri
-  sudo gem install nokogiri
+  sudo gem install bundler --no-ri -no-rdoc
 
   echo -e "\n\n"
   echo "-------------------------------------"
