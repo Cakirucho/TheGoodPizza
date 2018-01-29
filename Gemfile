@@ -71,6 +71,9 @@ group :development do
   # Retrieve the binding of a method's caller. Required to use the advanced
   # features of better_errors.
   gem 'binding_of_caller'
+
+  # Annotate Rails classes with schema and routes info.
+  gem 'annotate'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
