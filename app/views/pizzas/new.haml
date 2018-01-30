@@ -1,5 +1,21 @@
-%p
-  = "Hola que ase man"
+- content_for :title_header do
+  %h1
+    = "Create a new pizza"
 
-%div{style: "padding-top: 700px;"}
-  = "Hola que ase man"
+%div.pizzas-form-container
+  = form_for @pizza do |form|
+    .field
+      = form.label :name, "Pizza name", class: "label"
+      .control
+        = form.text_field :name, class: "input pizza-name", placeholder:"Pizza name"
+
+    .field
+      %label.label
+        = "Ingredients"
+
+      .control
+        - @ingredients.each do |ingredient|
+          %label.checkbox
+            %input{type: "checkbox", name: "ingredients[#{ingredient.id}]"}= ingredient.name
+
+      %input.button.primary-button{type: "submit", value: "Create pizza"}

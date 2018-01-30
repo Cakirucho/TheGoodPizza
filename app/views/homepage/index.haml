@@ -1,1 +1,8 @@
-= "Homepage"
+- content_for :title_header do
+  %h1
+    = "TheGoodPizza"
+
+.columns.is-multiline.is-mobile
+  - @pizzas.each do |pizza|
+    .column.is-one-quarter
+      = render partial: "layouts/grid_item", locals: { pizza: pizza }

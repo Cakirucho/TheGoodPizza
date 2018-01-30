@@ -1,25 +1,94 @@
 body {
-  margin-top: 70px !important;
-  background-color: #e8e8e8;
+  margin-top: 70px !important; // TODO -> I know importants make cats sad. Think another way to do that.
+
+  h1 {
+    text-align: left;
+    font-size: 1.625em;
+    line-height: 1.38462em;
+    font-weight: 600;
+  }
 }
 
-.navbar {
-  height: 70px;
-  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.15);
+section {
+  .title-container {
+    min-height: 5em;
+    position: relative;
+    padding-left: 3em;
+    padding-right: 3em;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: #e8e8e8;
+  }
+}
+
+article {
+  .wrapper {
+    padding-top: 2em;
+    padding-left: 6em;
+    padding-right: 6em;
+  }
 }
 
 div {
   .accent-button {
-    border: solid 1px #3EA282;;
-    color: #3EA282;
+    color: #45b491;
+    border: solid 1px #45b491;
   }
 
   .accent-button:hover {
-    background-color: #3EA282;
     color: white;
+    background-color: #45b491;
+  }
+
+  .accent-button:active {
+    color: white;
+    border: solid 1px #3ea283;
+    background-color: #3ea283;
+  }
+
+  .primary-button {
+    color: white;
+    background-color: #4e2657;
+  }
+
+  .primary-button:hover {
+    color: white;
+  }
+
+  .primary-button:focus {
+    color: white;
+  }
+
+  .primary-button:active {
+    color: white;
+    background-color: #3e1e44;
+
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.15);
   }
 }
 
+nav {
+  height: 70px;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.15);
+
+  .control-margin {
+    margin-right: 20px;
+  }
+}
+
+.card {
+  .content {
+    color: #4a4a4a;
+  }
+}
+
+
+// *** New ingredient css ***
 .control {
-  margin-right: 20px;
+  .ingredient-name, .ingredient-price {
+    width: 30%;
+  }
 }

@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   # Default homepage.
   get '/' => 'homepage#index', as: :homepage
 
-  resources :pizzas, only: [:new, :create] do
+  resources :pizzas, only: [:new, :create, :show] do
     get :new, as: :new_pizza
   end
 

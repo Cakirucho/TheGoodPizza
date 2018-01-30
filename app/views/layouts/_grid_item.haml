@@ -1,0 +1,14 @@
+.card
+  %a{href: pizza_path(pizza), title: "Edit pizza"}
+    .card-image
+      %figure.image.is-4by3
+        %img{:alt => "Placeholder image", :src => "https://bulma.io/images/placeholders/1280x960.png"}/
+    .card-content
+      .media
+        .media-left
+          %p.title.is-4= pizza.name
+          %p.subtitle.is-6= pizza_formatted_price(pizza.total_price)
+      .content
+        = "Ingredients:"
+        - pizza.pizza_ingredients.each do |ingredient|
+          %p= formatted_ingredient(ingredient)

@@ -10,4 +10,14 @@
 #
 
 class PizzaIngredient < ApplicationRecord
+
+  belongs_to :ingredient, foreign_key: "ingredient_id"
+
+  def ingredient_name
+    self.ingredient.name
+  end
+
+  def ingredient_price
+    self.ingredient.get_price
+  end
 end

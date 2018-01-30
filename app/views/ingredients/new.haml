@@ -1,0 +1,17 @@
+- content_for :title_header do
+  %h1
+    = "Create a new ingredient"
+
+%div.ingredients-form-container
+  = form_for @ingredient do |form|
+    .field
+      = form.label :name, "Ingredient name", class: "label"
+      .control
+        = form.text_field :name, class: "input ingredient-name", placeholder:"Ingredient name"
+
+    .field
+      = form.label :price, "Ingredient price", class: "label"
+      .control
+        = form.text_field :price, class: "input ingredient-price", placeholder:"Ingredient price (in EUR)"
+
+    %input.button.primary-button{type: "submit", value: "Create ingredient"}

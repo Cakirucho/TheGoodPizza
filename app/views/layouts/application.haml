@@ -8,7 +8,12 @@
   = favicon_link_tag 'favicon.ico'
 
 %body
-
   = render partial: 'layouts/navbar'
 
-  = yield
+  %section.view-title
+    .title-container
+      = yield :title_header
+
+  %article.page-content
+    .wrapper
+      = yield
