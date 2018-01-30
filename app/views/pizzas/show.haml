@@ -1,0 +1,21 @@
+- content_for :title_header do
+  %h1
+    = "Pizza " + @pizza.name
+
+= "Update ingredients: "
+- @pizza.pizza_ingredients.each do |ingredient|
+  %div.columns
+    %div.column
+      = ingredient.ingredient_name
+    %div.column
+      .button.red-button
+        = link_to "Delete ingredient", pizza_ingredient_path(ingredient.id), method: :delete
+
+= "Add ingredients: "
+- @non_added_ingredients.each do |non_added_ingredient|
+  %div.columns
+    %div.column
+      = non_added_ingredient.name
+    %div.column
+      .button.primary-button
+        = link_to "Add ingredient", pizza_path(@pizza.id, ingredient_id: non_added_ingredient.id), method: :put

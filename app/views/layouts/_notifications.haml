@@ -1,0 +1,7 @@
+- if flash[:notice].present?
+  %article.message.is-primary.flash-message
+    %div.message-header
+      %p="Notice"
+      %button.delete.delete-flash-notice
+    %div.message-body
+      = flash[:notice]
