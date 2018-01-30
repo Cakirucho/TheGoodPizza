@@ -1,0 +1,25 @@
+body {
+  margin-top: 70px !important;
+  background-color: #e8e8e8;
+}
+
+.navbar {
+  height: 70px;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.15);
+}
+
+div {
+  .accent-button {
+    border: solid 1px #3EA282;;
+    color: #3EA282;
+  }
+
+  .accent-button:hover {
+    background-color: #3EA282;
+    color: white;
+  }
+}
+
+.control {
+  margin-right: 20px;
+}

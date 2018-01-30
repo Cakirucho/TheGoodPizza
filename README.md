@@ -12,11 +12,17 @@
   - Need to install all the esentials for rails (nodejs, libxml2 etc)
   - Also mysql needed -> `gem install mysql2`
 
+ Steps to build database:
+  - First, you will need `mysql` server --> `service mysql start`
+  - Then, you will be able to do `mysql -u root`. If you type `show databases`,
+    you will be able to see project one (`the_good_pizza`).
+  - Access it by typing `use the_good_pizza`.
+
 Then run the server using `spring` --> `bundle exec spring rails server`
 
 You should have it running in `localhost:3000`
 
-PD: I have build a deployment script, but don't know if it will work, because
+PD: Added deployment script. Don't know if it will work, because
     i built it pretty fast to start the project.
 
 

@@ -1,0 +1,14 @@
+%nav.navbar.is-fixed-top
+  .navbar-brand
+    %a.navbar-item{href: homepage_url}
+      %img{alt: "TheGoodPizza will make your dreams come true", title: "TheGoodPizza", :src => image_url("Pizza-logos.png")}
+
+  .navbar-end
+    .navbar-item
+      .field.is-grouped
+        %p.control
+          %a.button.accent-button{href: new_pizza_url}
+            = "Add Pizza"
+        %p.control
+          %a.button.accent-button{href: new_ingredient_url}
+            = "Add Ingredient"
