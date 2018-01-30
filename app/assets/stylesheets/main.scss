@@ -7,6 +7,13 @@ body {
     line-height: 1.38462em;
     font-weight: 600;
   }
+
+  h2 {
+    text-align: left;
+    font-size: 1.225em;
+    line-height: 1.18462em;
+    font-weight: bold;
+  }
 }
 
 section {
@@ -107,7 +114,19 @@ nav {
 
 // *** New ingredient css ***
 .control {
-  .ingredient-name, .ingredient-price {
+  .ingredient-name, .ingredient-price, .pizza-name {
     width: 30%;
   }
+}
+
+// *** New pizza css ***
+.control {
+  .checkbox {
+    display: block;
+    margin-top: 1em;
+  }
+}
+
+#new_pizza {
+  margin-top: 1em;
 }

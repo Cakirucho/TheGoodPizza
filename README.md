@@ -1,6 +1,6 @@
 # README
 
-## Project build by Samuel Villaescusa Vinader(samuelvv22@gmail.com)
+## Project developed by Samuel Villaescusa Vinader(samuelvv22@gmail.com)
 
 ### How to build project
 
@@ -24,6 +24,10 @@
 Then run the server using `spring` --> `bundle exec spring rails server`
 
 You should have it running in `localhost:3000`
+
+#### Frontend framework
+ - I have used `Bulma.io` as frontend framework (it seems pretty interesting, i just
+   wanted to try it).
 
 PD: Added deployment script. Don't know if it will work, because
     i built it pretty fast to start the project.

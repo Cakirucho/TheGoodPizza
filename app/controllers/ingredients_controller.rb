@@ -8,6 +8,7 @@ class IngredientsController < ApplicationController
     @new_ingredient = Ingredient.new(ingredient_params)
 
     if @new_ingredient.present? && @new_ingredient.save
+      flash[:notice] = "Ingredient created"
       redirect_to homepage_path and return
     end
 
